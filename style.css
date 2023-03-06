@@ -61,10 +61,7 @@ body{
     background-size: cover;
 }
 .home-section{
-    /* background: rgba(0,0,0,0.7) url("bggrey.jpg");
-    background-repeat: no-repeat;
-    background-blend-mode: darken;
-    background-size: cover; */
+    
     
     font-size: small;
     width: 100%;
@@ -94,10 +91,10 @@ body{
 
 .home-img{
     position: absolute;
-    top: 0;
+    /* top: 0; */
     bottom: 0;
     right: 0;
-    height: 100vh;
+    height: 80vh;
     width: 50%;
     /* object-fit: cover; */
 
@@ -123,8 +120,12 @@ body{
     opacity: 1;
     z-index: 8;
 }
+/* 
+.ECE{
+  color: crimson;
+  padding : 10px 10px 100px 500px;
 
-
+} */
 /*------------------------------------  Home section  ---------------------------------------------------------*/
 
  /*-----------------------------------------animation------------------------------------------*/
@@ -164,7 +165,7 @@ body{
     padding-left: 0.5rem;
     top: 0.2rem;
     /* left: 270px; */
-    animation: openclose 5s ease-in-out infinite;
+    animation: openclose 3s ease-in-out infinite;
   }
   
   .word1, .word2, .word3 {
@@ -244,9 +245,10 @@ body{
   /*------------------------------------------------project section--------------------------------------------*/
 
   .project-section{
+
     width: 100%;
     min-height: 100vh;
-    padding: 150px 100px 100px;
+    padding: 100px 100px 100px 100px;
     position: fixed;
     top: 0;
     transition: 1s;
@@ -270,6 +272,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
+
 .project-mahesh{
   padding: 6px 6px 6px 6px;
   background-color: crimson;
@@ -294,8 +297,10 @@ body{
 }
 
 .project-content{
+  /* width:50px; */
+
     position: relative;
-    padding: 40px;
+    padding: 0px;
     color: #fff;
     transition: .5s;
     opacity: 0;
@@ -316,6 +321,7 @@ body{
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+    
 }
 
 .project-btn-grp{
@@ -336,6 +342,7 @@ body{
     color: #fff;
     cursor: pointer;
 }
+
 .project-btn:hover{
   transition: 0.2s;
    background-color: rgb(255, 255, 255);
@@ -399,6 +406,7 @@ body{
     height: 100%;
     object-fit: cover;
     border-radius: 40px;
+    margin-bottom: 50px;
 }
 
 .download-cv-btn{
@@ -413,11 +421,15 @@ body{
     text-transform: capitalize;
     cursor: pointer;
     transition: .5s;
-    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
 }
 
 .download-cv-btn:hover{
-    background: #000;
+  opacity: 0.7;
+    background:crimson;
+    color: #000;
 }
 
 .about{
@@ -437,7 +449,7 @@ body{
 
 .skill-section{
     position: relative;
-    margin: 100px 0;
+    margin:  10px 0;
     /* transition: .5s;
     opacity: 0; */
 }
@@ -445,7 +457,8 @@ body{
 .heading{
     text-align: center;
     font-size: 60px;
-    color: #fff;
+    color: crimson;
+    opacity: 0.8;
     text-transform: capitalize;
     font-weight: 300;
     margin-bottom: 100px;
@@ -455,8 +468,9 @@ body{
     width: 95%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1px;
+    grid-template-columns: repeat(3, 500px);
+    grid-column-gap: 1px;
+    /* grid-gap: 0px; */
     color: #fff;
 }
 
@@ -479,12 +493,12 @@ body{
     margin: 30px 0 20px;
 }
 
-.skill-info{
+/* .skill-info{
     text-align: center;
     opacity: 0.5;
     font-size: 18px;
     line-height: 30px;
-}
+} */
 
 .skill-level{
     position: absolute;
@@ -622,6 +636,9 @@ body{
 }
 
 .timeline .heading{
+  color: crimson;
+  width :1000px;
+  left: 0;
     margin-bottom: 150px;
 }
 
